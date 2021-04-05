@@ -1,0 +1,152 @@
+[
+    {
+        "id" : "1",
+        "name" : "ab-roller",
+        "type" : "count",
+        "range" : {
+            "min" : "5",
+            "max" : "20"
+        },
+        "filename": "ab-roller-min.jpg"
+    },
+    {
+        "id" : "2",
+        "name" : "dumbbell-push-up",
+        "type" : "count",
+        "range" : {
+            "min" : "5",
+            "max" : "20"
+        },
+        "filename": "dumbbell-push-up.jpg"
+    },
+    {
+        "id" : "3",
+        "name" : "dunbbell-press",
+        "type" : "count",
+        "range" : {
+            "min" : "5",
+            "max" : "30"
+        }, 
+        "filename": "dunbbell-press.jpg"
+    },
+    {
+        "id" : "4",
+        "name" : "dunbbell-Russian-twist",
+        "type" : "count",
+        "range" : {
+            "min" : "10",
+            "max" : "60"
+        },
+        "filename": "dunbbell-Russian-twist-min.jpg"
+    },
+    {
+        "id" : "5",
+        "name" : "handstand",
+        "type" : "time",
+        "range" : {
+            "min" : "5",
+            "max" : "20"
+        },
+        "filename": "handstand.jpg"
+    },
+    {
+        "id" : "6",
+        "name" : "hanging-leg-raise",
+        "type" : "count",
+        "range" : {
+            "min" : "5",
+            "max" : "15"
+        },
+        "filename": "hanging-leg-raise.jpg"
+    },
+    {
+        "id" : "7",
+        "name" : "LatPulldown",
+        "type" : "count",
+        "range" : {
+            "min" : "10",
+            "max" : "30"
+        },
+        "filename": "LatPulldown-min.jpg"
+    },
+    {
+        "id" : "8",
+        "name" : "leg-press",
+        "type" : "count",
+        "range" : {
+            "min" : "10",
+            "max" : "30"
+        },
+        "filename": "leg-press.jpg"
+    },
+    {
+        "id" : "9",
+        "name" : "leg-stretching",
+        "type" : "time",
+        "range" : {
+            "min" : "30",
+            "max" : "60"
+        },
+        "filename": "leg-stretching-min.jpg"
+    },
+    {
+        "id" : "10",
+        "name" : "plank",
+        "type" : "time",
+        "range" : {
+            "min" : "20",
+            "max" : "60"
+        },
+        "filename": "plank-min.jpg"
+    },
+    {
+        "id" : "11",
+        "name" : "single-leg-back-bridge",
+        "type" : "time",
+        "range" : {
+            "min" : "20",
+            "max" : "60"
+        },
+        "filename": "single-leg-back-bridge-min.jpg"
+    },
+    {
+        "id" : "12",
+        "name" : "single-leg-push-up",
+        "type" : "count",
+        "range" : {
+            "min" : "5",
+            "max" : "20"
+        },
+        "filename": "single-leg-push-up-min.jpg"
+    },
+    {
+        "id" : "13",
+        "name" : "speed-squat",
+        "type" : "count",
+        "range" : {
+            "min" : "5",
+            "max" : "15"
+        },
+        "filename": "speed-squat-min.jpg"
+    },
+    {
+        "id" : "14",
+        "name" : "squat",
+        "type" : "count",
+        "range" : {
+            "min" : "5",
+            "max" : "10"
+        },
+        "filename": "squat-min.jpg"
+    },
+    {
+        "id" : "15",
+        "name" : "twist-crunch",
+        "type" : "count",
+        "range" : {
+            "min" : "5",
+            "max" : "20"
+        },
+        "filename": "twist-crunch-min.jpg"
+    }
+]
