@@ -1,5 +1,5 @@
 const gF = require('./generalFunctions')
-const testData = require('../mytrainer-app-front/database/test-data.json')
+const testData = require('./database/test-data.json')
 /**
  * @param {Object} testData
  * @returns {Number} num

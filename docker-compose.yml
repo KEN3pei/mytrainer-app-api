@@ -1,0 +1,23 @@
+version: '3'
+services: 
+    api: 
+        build: .
+        volumes: 
+            - .:/usr/src/app
+            - /usr/src/app/node_modules/
+        ports:
+            - 8000:8000
+        command: node app
+    mongo:
+        image: mongo
+        ports:
+            - 27020:27017
+        volumes:
+            - ./mongo/db:/data/db
+            - ./mongo/configdb:/data/configdb
+            - ./mongo/init:/docker-entrypoint-initdb.d 
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: kensuke
+            MONGO_INITDB_ROOT_PASSWORD: Ueken4ban
+            MONGO_INITDB_DATABASE: trainingInfoDB
+

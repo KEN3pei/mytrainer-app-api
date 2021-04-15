@@ -10,7 +10,7 @@ app.use(cors({ origin: true, credentials: false }))
 
 app.post('/menu', async(req, res) => {
     const count = dbClient.count()
-    const ramdomNums = gF.getUniqueNums(count, 5)
+    const ramdomNums = gF.getUniqueNums(count, 10)
     const ramdomDatas = dbClient.getRamdomData(ramdomNums)
 
     const ramDataAndBase64Array = await Promise.all([
