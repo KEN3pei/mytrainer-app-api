@@ -9,6 +9,7 @@ const gF = require('./generalFunctions')
 app.use(cors({ origin: true, credentials: false }))
 
 app.post('/menu', async(req, res) => {
+    console.log('post /menu !!!')
     const count = dbClient.count()
     const ramdomNums = gF.getUniqueNums(count, 10)
     const ramdomDatas = dbClient.getRamdomData(ramdomNums)
