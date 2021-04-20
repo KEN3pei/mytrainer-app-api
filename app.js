@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const dbClient = require('./testdbClient')
-// const dbClient = require('./mongodbClient')
+// const dbClient = require('./testdbClient')
+const mongoClient = require('./mongodbClient')
+
 const S3 = require('./s3')
 const gF = require('./generalFunctions')
 
@@ -10,13 +11,15 @@ app.use(cors({ origin: true, credentials: false }))
 
 app.post('/menu', async(req, res) => {
     console.log('post /menu !!!')
-    const count = dbClient.count()
+    const count = await mongoClient.count()
+    // const count = dbClient.count()
     const ramdomNums = gF.getUniqueNums(count, 10)
-    const ramdomDatas = dbClient.getRamdomData(ramdomNums)
+    const ramObjects = await mongoClient.getRamdomData(ramdomNums)
+    // const ramdomDatas = dbClient.getRamdomData(ramdomNums)
 
     const ramDataAndBase64Array = await Promise.all([
-        gF.replaceRangeCount(ramdomDatas),
-        S3.getBase64Array(ramdomDatas)
+        gF.replaceRangeCount(ramObjects),
+        S3.getBase64Array(ramObjects)
     ])
 
     const preparedData = gF.prepareToResponce(ramDataAndBase64Array)

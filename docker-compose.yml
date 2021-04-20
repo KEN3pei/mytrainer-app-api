@@ -3,23 +3,29 @@ services:
     mongo:
         image: mongo
         ports:
-            - 27020:27017
+            - 27022:27017
         volumes:
             - ./mongo/db:/data/db
             - ./mongo/configdb:/data/configdb
             - ./mongo/init:/docker-entrypoint-initdb.d 
+        restart: always
         environment:
             MONGO_INITDB_ROOT_USERNAME: kensuke
             MONGO_INITDB_ROOT_PASSWORD: Ueken4ban
-            MONGO_INITDB_DATABASE: trainingInfoDB
+            MONGO_INITDB_DATABASE: menuDB
     api: 
         build: .
         volumes: 
             - .:/usr/src/app
-            - /usr/src/app/node_modules/
+            - /usr/src/app/node_modules
         ports:
             - 8080:8080
         command: node app
+        restart: always
+        environment:
+            ME_CONFIG_MONGODB_ADMINUSERNAME: kensuke
+            ME_CONFIG_MONGODB_ADMINPASSWORD: Ueken4ban
+            MONGO_INITDB_DATABASE: menuDB
 networks:
   default:
     external:
