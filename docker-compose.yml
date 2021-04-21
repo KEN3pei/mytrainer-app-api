@@ -3,15 +3,15 @@ services:
     mongo:
         image: mongo
         ports:
-            - 27022:27017
+            - 27022:${MONGO_PORT}
         volumes:
             - ./mongo/db:/data/db
             - ./mongo/configdb:/data/configdb
             - ./mongo/init:/docker-entrypoint-initdb.d 
         restart: always
         environment:
-            MONGO_INITDB_ROOT_USERNAME: kensuke
-            MONGO_INITDB_ROOT_PASSWORD: Ueken4ban
+            MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+            MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
             MONGO_INITDB_DATABASE: menuDB
     api: 
         build: .
@@ -23,10 +23,10 @@ services:
         command: node app
         restart: always
         environment:
-            ME_CONFIG_MONGODB_ADMINUSERNAME: kensuke
-            ME_CONFIG_MONGODB_ADMINPASSWORD: Ueken4ban
+            ME_CONFIG_MONGODB_ADMINUSERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+            ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
             MONGO_INITDB_DATABASE: menuDB
 networks:
   default:
     external:
-      name: mytrainer-app
+      name: ${DOCKER_NETWORK_NAME}
