@@ -21,7 +21,7 @@ exports.getBase64Array = async(ramdomObject) => {
         try{
             let pendingFunc = []
             let params = {
-                'Bucket': 'mytrainer-imgs',
+                'Bucket': env.AWS_BUCKET,
                 'Key': ''
             }
             // Promise.allで並列に処理するために、asyncGetObjectをpending状態で配列に格納している
