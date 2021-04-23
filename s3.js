@@ -8,7 +8,7 @@ const AWS = require('aws-sdk')
 const s3Client = new AWS.S3({
     accessKeyId: env.AWS_ACCESSKEY_ID,
     secretAccessKey: env.AWS_SEACRET_ACCESS_KEY,
-    region: env.AWS_REAGION
+    region: env.AWS_REGION
 })
 
 /**
