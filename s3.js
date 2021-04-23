@@ -1,12 +1,14 @@
 /**
  * s3と接続、操作をするクラス
  */
+require('dotenv').config()
+const env = process.env
 const AWS = require('aws-sdk')
 
 const s3Client = new AWS.S3({
-    accessKeyId: 'AKIA6NWWQML4XZINH6IL',
-    secretAccessKey: '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',
-    region: 'ap-northeast-1'
+    accessKeyId: env.AWS_ACCESSKEY_ID,
+    secretAccessKey: env.AWS_SEACRET_ACCESS_KEY,
+    region: env.AWS_REAGION
 })
 
 /**
