@@ -53,7 +53,8 @@ exports.asyncGetObject = (params) => {
         try{
             s3Client.getObject(params, (err, data) => {
                 if(err){
-                    throw new Error('s3 getObject Error')
+                    console.log('s3Client getObject Error');
+                    throw new Error(err)
                 }else{
                     resolve(
                         data.Body.toString('base64')
