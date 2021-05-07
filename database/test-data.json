@@ -7,7 +7,7 @@
             "min" : "5",
             "max" : "20"
         },
-        "filename": "ab-roller-min.jpg"
+        "filename": "ab-roller.jpg"
     },
     {
         "id" : "2",
@@ -37,7 +37,7 @@
             "min" : "10",
             "max" : "60"
         },
-        "filename": "dunbbell-Russian-twist-min.jpg"
+        "filename": "dunbbell-Russian-twist.jpg"
     },
     {
         "id" : "5",
@@ -67,7 +67,7 @@
             "min" : "10",
             "max" : "30"
         },
-        "filename": "LatPulldown-min.jpg"
+        "filename": "LatPulldown.jpg"
     },
     {
         "id" : "8",
@@ -87,7 +87,7 @@
             "min" : "30",
             "max" : "60"
         },
-        "filename": "leg-stretching-min.jpg"
+        "filename": "leg-stretching.jpg"
     },
     {
         "id" : "10",
@@ -97,7 +97,7 @@
             "min" : "20",
             "max" : "60"
         },
-        "filename": "plank-min.jpg"
+        "filename": "plank.jpg"
     },
     {
         "id" : "11",
@@ -107,7 +107,7 @@
             "min" : "20",
             "max" : "60"
         },
-        "filename": "single-leg-back-bridge-min.jpg"
+        "filename": "single-leg-back-bridge.jpg"
     },
     {
         "id" : "12",
@@ -117,7 +117,7 @@
             "min" : "5",
             "max" : "20"
         },
-        "filename": "single-leg-push-up-min.jpg"
+        "filename": "single-leg-push-up.jpg"
     },
     {
         "id" : "13",
@@ -127,7 +127,7 @@
             "min" : "5",
             "max" : "15"
         },
-        "filename": "speed-squat-min.jpg"
+        "filename": "speed-squat.jpg"
     },
     {
         "id" : "14",
@@ -137,7 +137,7 @@
             "min" : "5",
             "max" : "10"
         },
-        "filename": "squat-min.jpg"
+        "filename": "squat.jpg"
     },
     {
         "id" : "15",
@@ -147,6 +147,6 @@
             "min" : "5",
             "max" : "20"
         },
-        "filename": "twist-crunch-min.jpg"
+        "filename": "twist-crunch.jpg"
     }
 ]
